@@ -69,6 +69,15 @@ flights_df= flights_df.filter(items=["Ilmoittava lentoasema",
 
 st.header("Bonustehtävä 5: Lentokenttädatan visualisointi Streamlit-sovelluksena")
 
+# Pythonin usean rivin kommentti toimii Streamlitissä taikakomentona, jolloin 
+# kommentin sisältämä teksti visualisoidaan käyttöliittymään (Snowflake Inc b): 
+"""Tällä sivulla visualisoidaan Helsinki-Vantaan ja Rovaniemen lentokenttien 
+osalta, miten matkustajamäärät jakautuivat prosentuaalisesti eri vuodenaikojen 
+kesken vuonna 2024. Visualisointi tapahtuu ryhmiteltyinä pylväinä, jolloin 
+yksittäinen pylväs kuvaa yksittäistä vuodenaikaa. Lentokentän pylväsryhmän 
+pylväiden indikoimien matkustajamääräprosenttien yhteenlaskettu summa on 
+100."""
+
 st.subheader("Matkustajamäärien prosentuaalinen jakautuminen vuodenajoittain lentokenttäkohtaisesti")
 
 # Visualisoidaan lentokenttien matkustajamäärien prosentuaalinen osuus 
@@ -92,8 +101,6 @@ st.bar_chart(flights_df,
              y_label="", 
              x_label="Prosentuaalinen osuus matkustajien lentokenttäkohtaisesta kokonaismäärästä vuonna 2024")
 
-# Pythonin usean rivin kommentti toimii Streamlitissä taikakomentona, jolloin 
-# kommentin sisältämä teksti visualisoidaan käyttöliittymään (Snowflake Inc b): 
 """
 Helsinki-Vantaan lentokentän vilkkain vuodenaika matkustajamäärien osalta 
 vuonna 2024 oli kesä, kun taas Rovaniemen lentokentällä vilkkainta oli 
