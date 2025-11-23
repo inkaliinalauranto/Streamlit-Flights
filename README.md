@@ -1,1 +1,1 @@
-Linkki Streamlitin kautta deployatuun sovellukseen: 
+Linkki Streamlitin kautta deployatuun sovellukseen: https://4sq9tuze8my8jlnuhw2dxx.streamlit.app/
